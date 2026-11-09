@@ -1,0 +1,348 @@
+/*--primary-color: #60a4bb ; ice blue
+  --secondary-color: #BA9A5F ; deseret yellow
+  --accent1-color: #BA7D5F; peach
+  --accent2-color: #2E383B; navy
+  --accent3-color: #3B362E; brown
+*/
+@import  url('https://fonts.googleapis.com/css2?family=Huninn&family=Rye&family=Sancreek&family=Sriracha&display=swap');
+
+*{
+    margin:0;
+}
+
+div {
+    max-width:1600px;
+}
+
+header{
+    display:grid;
+    grid-template-columns: 150px auto;
+}
+
+#hero{
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top:-100px;
+}
+
+#hero-msg{
+    grid-area: 1/2/2/3;
+    margin-top:100px;
+}
+
+#hero-msg h4{
+    color:white;
+}
+
+#hero-box{
+    grid-area: 1/1/3/4;
+    z-index:-1;
+}
+
+#hero-image {
+    width:100%;
+}
+
+.home-title{
+    font-family: Rye, Sancreek, Garamond;
+    font-size: 2em;
+    margin-top: 10px;
+} 
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+
+#content { 
+    margin: 0 auto;
+}
+
+nav {
+    display:flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: #3B362E;
+    text-decoration: none;
+    padding:35px;
+}
+
+nav a:hover {
+    background-color: #376675;
+    color:#BA9A5F;
+    text-decoration:underline;
+}
+
+.button-box{
+    text-align: center;
+}
+
+.home-grid{
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+}
+
+main section{
+    text-align: center;
+}
+
+main section img{
+    box-sizing:border-box;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    background-color:#ba5f5f;
+    grid-area:4/1/9/11;
+}
+
+body { 
+    background-color: #BA9A5F;
+    color:#901414;
+    font-family: Sriracha,Huninn,Helvetica;
+    font-size: 22px;
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color: #60a4bb;
+    font-family: Rye, Sancreek, Garamond;
+} 
+
+.book, .join{
+    background-color: #60a4bb;
+    color:#000000;
+    text-decoration:none;
+    font-size: 18px;
+    padding:10px 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.book:hover, .join:hover{
+    background-color:#74c7e2;
+    color:#ffffff;
+    text-decoration:underline;
+    
+}
+
+.card-img{
+    border: 10px solid #60a4bb;
+    border-radius:30%; 
+    transition:transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.card-img:hover{
+    transform: scale(1.1);
+    opacity:0.6;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin:200px 0;
+}
+
+.rivers-card{
+    /* grid-area:2/2/3/4; */
+    grid-column:2/4;
+    grid-row:2/3;
+}
+
+.camping-card{
+    /* grid-area:2/5/3/7; */
+    grid-column:5/7;
+    grid-row:2/3;
+}
+
+.rapids-card{
+    /* grid-area:2/8/3/10; */
+    grid-column:8/10;
+    grid-row:2/3;
+}
+
+.mountains{
+    grid-area:5/2/8/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.card-img, .mountains{
+    width:100%;
+}
+
+.msg h2{
+    color:#901414;
+    font-family: Rye, Sancreek, Garamond;
+}
+
+.msg p{
+    color:#ba5f5f;
+    font-size: .8em;
+    padding-bottom:15px;
+}
+
+.msg{
+    background-color:#20345a;
+    line-height:1.5em;
+    padding: 35px;
+    grid-column:6/10;
+    grid-row:6/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+footer{
+    background-color:#3B362E;
+    color:#60a4bb;
+    font-family: Rye, Sancreek, Garamond;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+footer a {
+    color:#60a4bb;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:#c2f0ff;
+    text-decoration: underline;
+}
+
+footer p {
+    font-size:1.3em;
+}
+
+footer p:hover{
+    text-decoration: underline;
+}
+
+footer .social img{
+    border-radius:25%;
+    /*padding-top: 15px; */ 
+}
+
+.logo{
+    width:80px;
+}
+
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self:center;
+}
+
+.icon{
+    width:80px;
+    padding-top:10px;
+}
+
+
+
+@media screen and (max-width:900px){
+    #hero, .hero-grid{
+        display:block;
+        height:auto;
+    }
+
+    .book, .join{
+        padding:.3em;
+    }
+
+    .book{
+        font-size:.75em;
+    }
+
+    .join{
+        font-size:1.25em;
+    }
+
+    nav, footer{
+        flex-direction:column;
+        /* font-size: 10px; */
+    }
+
+    nav a{
+        display: block;
+        padding: 15px;
+    }
+
+    #hero{
+        margin-top: 0;
+    }
+
+    #hero-msg{
+        margin-top: 0;
+    }
+
+    #hero-msg h4{
+        display:none;
+    }
+
+    #hero-msg h1{
+        color:#6f7364;
+    }
+
+    .home-title{
+        font-size:25px;
+    }
+    /* I was trying to get rid of the large gap between the card images in the media query but wasn't able to remove it */
+    .home-grid{
+        display:flex;
+        /* flex-direction:column; */
+        flex-wrap: wrap;
+        /* align-items:flex-start; */
+        /* justify-content: ; */
+    }
+
+    .rivers-card, .camping-card, .rapids-card{
+        margin:0px auto;
+        transform: scale(0.75);
+        width:auto;
+        height:auto;
+    }
+
+    #background{
+        display:none;
+    }
+
+    .mountain, .msg{
+        width: 60%;
+        display: block;
+        margin:0 auto;
+        font-size: .5em;
+    }
+
+    .msg h2{
+        margin-bottom:25px;
+    }
+
+    footer{
+        margin-top:25px;
+        font-size:.3em;
+    }
+
+    footer img{
+        transform:scale(.5);
+    }
+
+    footer p:hover{
+        text-decoration: underline;
+    }
+
+
+}
+
+
+/*
+   
+*/

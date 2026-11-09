@@ -1,0 +1,31 @@
+h1{
+    color:aqua; 
+    margin-left: 20px;
+    border: 25px groove hotpink;
+    padding: 30px;
+
+}
+
+p.subtitle { /* specifically gets all the subtitle classes that are p elements*/
+    color: purple;
+}
+
+#header2 {
+    color:aquamarine;
+    text-decoration: underline green wavy 1px;
+}
+
+p{
+    margin: 10px 20px 10px 35px;
+    border: 10px inset red;
+}
+
+/* Decendancy selectors. a p element that is in the div.*/
+div p { 
+    color:red;
+}
+
+div p span { /*The selector is looking for a span element that is the child of a p element that is a child of a div element*/
+    font-weight: 100;
+    display:block; /*This puts the element selected on it own line*/
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Page </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <a><img id="logo" src="images/Vista Logos/colored-logo.png" alt="Logo" style="width:100px;"></a>
+        <nav>
+            <a href="index.html"><h1>Home</h1></a>
+            <a href="white_water_rafting/index.html" target="_blank"><h1>WWR</h1></a>
+            <a href="ice.html"><h1>ICE</h1></a>
+            <a><h1>About Me</h1></a>
+        </nav>
+    </header> 
+    <main>
+        <!-- These will have the hobby slideshows and the description to go along with it -->
+        <div class="hobby_slides">
+            <!-- images in the slideshow -->
+            <div class="hobby_img fade">
+
+                <img src="images/tigergrizz.jpg" alt="img" >
+            </div>
+            <div class="hobby_img fade">
+
+                <img src="images/riding_mud.jpg" alt="img">
+            </div>
+            <div class="hobby_img fade">
+
+                <img src="images/steak_potatoes.jpg" alt="img" >
+            </div>
+            <div class="hobby_img fade">
+
+                <img src="images/music.jfif" alt="img">
+            </div>
+            
+            <!-- description for the hobby images -->
+            <div class="hobby_description fade">
+                <h1>Wrestling</h1>
+                <p>I have been wrestling pretty much my whole life. I started 
+                    when I was in 1st grade and wrestled all the way through 
+                    high school. What draws me in the most is I determine how
+                    much competetion time I get. I have work hard in it and had
+                    many awesome opportunities. I had the opportunity to be on 
+                    the Idaho national team when we one our first national 
+                    championship. I am hoping to continue wrestling in college.
+                    I currently coach the club program for my high school in 
+                    Rexburg, ID. 
+
+                </p>
+
+            </div>
+            <div class="hobby_description fade">
+                <h1>Riding & Camping</h1>
+                <p>My family loves to be outside! We love going camping and
+                    riding atvs in the mountains. 
+                </p>
+
+            </div>
+            <div class="hobby_description fade">
+                <h1>Cooking</h1>
+                <p>I love to cook! I got especially good at cooking on my mission.
+                    I started cook a lot. I loved to cook steak, salmon and chicken and potatoes.
+                </p>
+
+            </div>
+            <div class="hobby_description fade">
+                <h1>Music</h1>
+                <p>I love music! In particular, I love to sing. I am always 
+                    singing; in the car, doing homework, hanging out with friends.
+                    In formal settings, I love singing barbershop and latin pieces. 
+                    In general, I love 80's music like Journey, Def, Leppard, Outfield
+                    REO Speedwagon, Foreinger, and many more. I also like indie rock and 
+                    modern music with bands like the Wallows, Imagine Dragons, Blink-182,
+                    and many more.
+                </p>
+
+            </div>
+
+            <!-- The button to go between the slideshow -->
+            <a class="prev" onclick="plusHobbySlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusHobbySlides(1)">&#10095;</a>    
+        </div>
+
+        <div style="text-align:center">
+                <span class="dot_hobby" onclick="currentHobbySlides(1)"></span>
+                <span class="dot_hobby" onclick="currentHobbySlides(2)"></span>
+                <span class="dot_hobby" onclick="currentHobbySlides(3)"></span>
+                <span class="dot_hobby" onclick="currentHobbySlides(4)"></span>
+            </div>
+        <!-- The dots to show what slide they are on -->
+        
+
+        <div class="project_slides">
+            <!-- description for the project images -->
+            <div class="project_description fade">
+                <table>
+                    <tr>
+                        <th>Project</th>
+                        <th>Year</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Fishing Rod</td>
+                        <td>2023</td>
+                        <td>In one of my classes, we constructed fishing rods. The rod was 
+                            already assembled and I got to wrap and appoxy the rod. We then 
+                            took a class trip to try them out!</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="project_description fade">
+                <table>
+                    <tr>
+                        <th>Project</th>
+                        <th>Year</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Self-watering Plant </td>
+                        <td>2026</td>
+                        <td>This project isn't currently finished but I am 
+                            creating circuit that will measure the humidity
+                            of the soil. If it is below a certain threshold, 
+                            the microcontroller will send voltage to an 
+                            electric valve that will send water to the circuit. 
+                            The picture is a small bacsic circuit as a placeholder. 
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="project_description fade">
+                <table>
+                    <tr>
+                        <th>Project</th>
+                        <th>Year</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Coming Soon!!</td>
+                        <td>Future</td>
+                        <td>I currently have another projects. I have many unfinished 
+                            projects from 3d printing projects to basic circuits I want 
+                            to build. 
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            
+            <!-- images in the slideshow -->
+            <div class="project_img fade">
+
+                <img src="images/fishing_rod.jpg" alt="img">
+            </div>
+            <div class="project_img fade">
+
+                <img src="images/electric.jpg" alt="img">
+            </div>
+            <div class="project_img fade">
+
+                <img src="images/under-construction.png" alt="img">
+            </div>
+            
+            
+            <!-- The button to go between the slideshow -->
+            <a class="prev_project" onclick="plusProjectSlides(-1)">&#10094;</a>
+            <a class="next_project" onclick="plusProjectSlides(1)">&#10095;</a>
+            
+        </div>
+
+        <!-- The dots to show what slide they are on -->
+        <div style="text-align:center">
+            <span class="dot_project" onclick="currentProjectSlides(1)"></span>
+            <span class="dot_project" onclick="currentProjectSlides(2)"></span>
+            <span class="dot_project" onclick="currentProjectSlides(3)"></span>
+        </div>
+
+        <div class="achievement_slides">
+            <!-- images in the slideshow -->
+            <div class="achievement_img fade">
+
+                <img src="images/podium.jpg" alt="img">
+            </div>
+            <div class="achievement_img fade">
+
+                <img src="images/fred_bappy.jpeg" alt="img">
+            </div>            
+
+            <!-- description for the achievement images. 
+             Im thinking of putting in tables but I might do like the other ones -->
+            <div class="achievement_description fade">
+                <h1>3rd at State for Wrestling</h1>
+                <p>My goal going into my senior year was to be a state 
+                    champion. However, I lost in the semis in a very close                             
+                    match. I was completely devestated, and, to make matters                           
+                    worse, I had to face someone who had beat me every time we
+                    wrestled. After regathering myself, I came back and beat 
+                    him to win 3rd place.</p>
+            </div>
+            <div class="achievement_description fade">
+                <h1>Mission</h1>
+                <p>I served a mission for the church of Jesus Christ of Latter-day
+                    Saints in Dallas, TX. It was one of the greatest experiences of
+                    life! I grew so much spritually and physically. I took many positions
+                    that helped me stretch myself. I learned how to study, teach, and 
+                    lead. I had many wonderful examples that guided me to become better. 
+                    I was able to return the favor and help others do the same. While on 
+                    my mission, I had the wonderful opportunity to help others 
+                    come closer to Jesus Christ through baptism. 
+                </p>
+            </div>            
+            <!-- The button to go between the slideshow -->             
+            <a class="prev" onclick="plusAchievementSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusAchievementSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- The dots to show what slide they are on -->
+        <div style="text-align:center">
+            <span class="dot_achieve" onclick="currentAchievementSlides(1)"></span>
+            <span class="dot_achieve" onclick="currentAchievementSlides(2)"></span>
+        </div>
+
+    </main>
+    <!-- These functions will help to go back and forth between slides -->
+    <script>
+        let hobbyIndex = 1;
+        let projectIndex = 1;
+        let achieveIndex = 1;
+
+        showHobbySlides(hobbyIndex);
+        function plusHobbySlides(n){
+            showHobbySlides(hobbyIndex += n);
+        }
+        function currentHobbySlides(n){
+            showHobbySlides(hobbyIndex = n);
+        }
+
+        function showHobbySlides(n){
+            let i;
+            let slides = document.getElementsByClassName("hobby_img");
+            let words = document.getElementsByClassName("hobby_description");
+            let dots = document.getElementsByClassName("dot_hobby");
+
+            if (n > slides.length) {hobbyIndex = 1}
+            if (n < 1) {hobbyIndex = slides.length}
+
+            for (i = 0; i < slides.length; i++){
+                slides[i].style.display = "none";
+                words[i].style.display = "none";
+            }
+
+            for(i = 0; i < dots.length; i++){
+                dots[i].className = dots[i].className.replace(" active","");
+            }
+
+            slides[hobbyIndex - 1].style.display = " block";
+            words[hobbyIndex - 1].style.display = " block";
+            dots[hobbyIndex - 1].className += " active";
+        }
+
+        //project slide functions
+        
+        showProjectSlides(projectIndex);
+        function plusProjectSlides(n){
+            showProjectSlides(projectIndex += n);
+        }
+        function currentProjectSlides(n){
+            showProjectSlides(projectIndex = n);
+        }
+        function showProjectSlides(n){
+            let i;
+            let slides = document.getElementsByClassName("project_img");
+            let words = document.getElementsByClassName("project_description");
+            let dots = document.getElementsByClassName("dot_project");
+
+            if (n > slides.length) {projectIndex = 1}
+            if (n < 1) {projectIndex = slides.length}
+
+            for (i = 0; i < slides.length; i++){
+                slides[i].style.display = "none";
+                words[i].style.display = "none";
+            }
+
+            for(i = 0; i < dots.length; i++){
+                dots[i].className = dots[i].className.replace(" active","");
+            }
+
+            slides[projectIndex - 1].style.display = " block";
+            words[projectIndex - 1].style.display = " block";
+            dots[projectIndex - 1].className += " active";
+        }
+
+        //achievement slide functions
+        showAchievementSlides(achieveIndex);
+        function plusAchievementSlides(n){
+            showAchievementSlides(achieveIndex += n);
+        }
+        function currentAchievementSlides(n){
+            showAchievementSlides(achieveIndex = n);
+        }
+        function showAchievementSlides(n){
+            let i;
+            let slides = document.getElementsByClassName("achievement_img");
+            let words = document.getElementsByClassName("achievement_description");
+            let dots = document.getElementsByClassName("dot_achieve");
+
+            if (n > slides.length) {achieveIndex = 1}
+            if (n < 1) {achieveIndex = slides.length}
+
+            for (i = 0; i < slides.length; i++){
+                slides[i].style.display = "none";
+                words[i].style.display = "none";
+            }
+
+            for(i = 0; i < dots.length; i++){
+                dots[i].className = dots[i].className.replace(" active","");
+            }
+
+            slides[achieveIndex - 1].style.display = " block";
+            words[achieveIndex - 1].style.display = " block";
+            dots[achieveIndex - 1].className += " active";
+        }
+    </script>
+    <footer>
+        <h1>Cole Nelson</h1>
+        <h3>2006colenelson@gmail.com</h3>
+        <div class="social">
+            <img src="images/facebook.png" alt="img">
+            <img src="images/linkedin_logo_icon.webp" alt="img">
+            <img src="images/handshake.png" alt="img">
+        </div>
+    </footer>
+</body>
+</html>

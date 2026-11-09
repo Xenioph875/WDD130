@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <!-- Add your devotional content here -->
+        <table>
+          <!--  tr = table row -->
+          <tr> 
+            <!--th = table header -->
+            <th>Speaker</th> 
+            <th>Title</th>
+            <th>Location</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <!--td = table data -->
+            <td>J.B. Haws</td> 
+            <td><a href="https://speeches.byu.edu/talks/j-b-haws/wrestling-with-comparisons/">Wrestling with Comparisons</a></td>
+            <td>BYU Provo</td>
+            <td>7th May 2019</td>
+          </tr>
+          <tr>
+            <td>Dallas Jenkins</td>
+            <td><a href="https://speeches.byu.edu/talks/dallas-jenkins/five-loaves-and-two-fishes/">Five Loaves and Two Fishes</a></td>
+            <td>BYU Provo</td>
+            <td>29th Oct. 2024</td>
+          </tr>
+          <tr>
+            <td>Elder James O. Fantone</td>
+            <td><a href="https://www.byui.edu/speeches/devotionals/james-o-fantone/the-battle-is-the-lords-september-22-2026">The Battle is the Lord's</a></td>
+            <td>BYU Idaho</td>
+            <td>22 Sept. 2026</td>
+          </tr>
+          <tr>
+            <td>Torrey Morrill</td>
+            <td>A Better Covering</td>
+            <td>BYU Idaho</td>
+            <td>27 Oct. 2026</td>
+          </tr>
+        </table>
+
+        <form>
+          <!-- Speaker -->
+          <label for="speaker_name">Speaker: </label> 
+          <input type="text" id="speaker_name" required> 
+          <!-- The for in the label tag links the label to the input id --> 
+
+          <!-- title input -->
+          <label for="title_name">Title: </label>
+          <input type="text" id="title_name" required>
+          
+          <!-- Location -->
+          <label for="location">Location: </label>
+          <input type="text" id="location">
+          
+          <!-- Date -->
+          <label for="date">Date: </label>
+          <input type="text" id="date">
+
+          <!-- Submit Button -->
+          <input type="submit" value="Sumbit">
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

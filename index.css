@@ -1,0 +1,287 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kaushan+Script&family=Prosto+One&display=swap');
+/* fonts:Prosto One, Audiowide, Fraunces, Kaushan Script */
+*{
+    margin:0;
+}
+/*  
+    color:#01989c
+    color:#4b6e72
+    color:#000
+    color:#6bffea
+    color:#d736f6
+    color:#35b43f
+*/
+body{
+    background: linear-gradient(65deg,#298a31,#01989c,  #a31fbd);
+}
+
+main{
+    padding-top: 125px;
+}
+
+header{
+    display:flex;
+    background-color:#4b6e72;
+    width: 100%;
+    position:fixed;
+    z-index:1;
+    margin-bottom:50px;
+}
+
+#logo{
+    height:100%
+}
+
+nav{
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a{
+    font-family:'Kaushan Script';
+    cursor:pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover{
+    color:#d736f6;
+}
+
+.hobby_slides, .project_slides, .achievement_slides{
+    margin-top:10px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hobby_img img, .project_img img, .achievement_img img{
+    width:600px;
+    height:auto;
+    border: 10px solid black;
+    border-radius: 15px;
+}
+
+.hobby_description, .achievement_description{
+    border:1px solid black;
+    border-radius:10px;
+    max-width:350px;
+    height:500px;
+    justify-items: center;
+    padding-left:50px;
+    padding-right:50px;
+    background-color:#6bffea;
+    font-size: 1.25em;
+}
+
+.hobby_description h1, .achievement_description h1{
+    font-family: 'Kaushan Script';
+    text-decoration: underline;
+    margin-top:15px;
+    font-size:2.25em;
+}
+
+.hobby_description p, .achievement_description p{
+    font-family:'Fraunces', 'Times New Roman';
+    color:#1c8024;
+    margin-top:15px;
+
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.dot_hobby, .dot_project, .dot_achieve, .dot{
+    height:15px;
+    width:15px;
+    background-color:rgb(123, 123, 123);
+    border-radius: 50%;
+    margin:25px 2px;
+    display:inline-block;
+    cursor: pointer;
+}
+
+.next, .prev, .next_project, .prev_project{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev_project{
+    left: 100px;
+}
+
+.next{
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+}
+
+.next:hover, .prev:hover, .next_project:hover, .prev_project:hover{
+    background-color:rgba(0, 0, 0, 0.8)
+}
+
+.next:active, .prev:active, .next_project:active, .prev_project:active{
+    animation: fade;
+    animation-duration: 1.5s;
+}
+
+.active, .dot_hobby:hover, .dot_project:hover, .dot_achieve:hover, .dot:hover{
+    background-color: lightgrey;
+}
+
+table{
+    max-width:500px;
+    background-color: #6bffea;
+}
+
+td, th, table{
+    border: 5px solid #d736f6;
+    border-radius:15px;
+    border-collapse:collapse; 
+    padding: 25px;
+    
+}
+
+table{
+    justify-content: center;
+    align-items: center;
+    margin:10%;
+}
+
+footer{
+    background-color: #4b6e72;
+    align-content: center;
+    justify-items: center;
+    height:250px;
+    margin-top:25px;
+    border-top:3px solid black;
+}
+
+footer h1{
+    font-family: 'Kaushan Script';
+    margin-bottom: 5px;
+}
+
+.social img{
+    width:55px;
+    margin-left:3px;
+    margin-top:15px;
+}
+
+/* ====================================================================================== */
+/* ICE PAGE */
+/* ====================================================================================== */
+
+h1.ice{
+    text-align: center;
+    margin-top:20px;
+    font-family: Audiowide;
+}
+
+.assignment{
+    text-decoration: none;
+    color:#000;
+}
+
+.assignment:hover{
+    color:#d736f6;
+    text-decoration:underline;
+}
+
+.exercise{
+    text-align: center;
+}
+
+.overlay{
+    text-align:center;
+    align-content: center;
+    background-color: #4b6e72;
+    opacity: 0;
+    position:absolute;
+    transition:.5s;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    height:100%;
+    border-radius: 25px;
+}
+
+.overlay p{
+    padding: 0 40px;
+    font-size: 1.35em;
+    color:#03f7ff;
+    font-family: Fraunces;
+}
+
+.image_container{
+    position:relative;
+    width:fit-content;
+    height:fit-content;
+}
+.image_container:hover .overlay{
+    opacity: 0.9;
+}
+
+.exercise h2{
+    margin:25px 0 30px 0;
+    font-family:'Kaushan Script';
+}
+
+.exercise img{
+    border-radius:25px;
+    border:15px solid #d736f6;
+    height:400px;
+}
+
+.exercise img:hover{
+    transform: scale(1.05);
+}
+
+.grid_container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 10%;
+}
+
+.fav_devo{
+    grid-column:span 2;
+}
+
+.fav_devo img{
+    width:800px;    
+}
+
+.apostle{
+    width:fit-content;
+    grid-column:2/3;
+}
+
+.prophet{
+    width:fit-content;
+    grid-column:1/2;
+}
+

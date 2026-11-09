@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        /* Insert styles here */
+        .main{
+          background-image: url(images/christus.webp);
+          border: 5px solid black;
+          border-radius: 5%;
+          margin:50px 20%;
+          max-width: 800px;
+          height:700px;
+        }
+
+        .presidency{
+            display:grid;
+            grid-template-columns: 20% 1fr 1fr 1fr 20%;
+            justify-items:center;
+        }
+
+        h1, h2{
+            text-align: center;
+            color:white;
+            margin-bottom:5px;
+        }
+
+        .presidency a:nth-child(1){
+            grid-column: 2/3; 
+        }
+
+        .apostles{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        
+        .apostles a:nth-child(1){
+            grid-column: 2/3;
+        }
+
+        .apostles a:nth-child(5){
+            grid-column: 2/3;
+        }
+
+        .apostles a:nth-child(9){
+            grid-column: 2/3;
+        }
+
+        img{
+            width:100px;
+            border: 5px solid white;
+            border-radius:100%;
+            margin-bottom:10px;
+        }
+
+        img:hover{
+            transform: scale(1.25);
+            opacity:0.9;
+            border:3px solid rgb(162, 0, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Insert HTML elements here -->
+     <div class="main">
+        <!-- <img id="hero-img" src="images/christus.webp" alt="Christus"> -->
+        <h1>First Presidency</h1>
+        <div class="presidency">
+            <a href="https://www.churchofjesuschrist.org/learn/people/henry-b-eyring/life-leadership?lang=eng"><img src="images/eyring.webp" alt="President Eyring"></a>
+            <a href="https://www.churchofjesuschrist.org/learn/people/dallin-h-oaks/life-leadership?lang=eng"><img src="images/oaks.webp" alt="President Oaks"></a>
+            <a href="https://www.churchofjesuschrist.org/learn/people/d-todd-christofferson/life-leadership?lang=eng"><img src="images/christofferson.webp" alt="President Christofferson"></a>
+            
+        </div>
+        <h2>The Quorum of the Twelve Apostles</h3>
+        <div class="apostles">
+            <a href="https://www.churchofjesuschrist.org/learn/quorum-of-the-twelve-apostles?lang=eng"><img src="images/uchtdorf.webp" alt="President Uchtdorf"></a>
+            <a href="https://www.churchofjesuschrist.org/learn/david-a-bednar?lang=eng"><img src="images/bednar.webp" alt="Elder Bednar"></a>
+            <a href="https://www.churchofjesuschrist.org/learn/quentin-l-cook?lang=eng"><img src="images/cook.webp" alt="Elder Cook"></a>
+            <a href="https://www.churchofjesuschrist.org/learn/neil-l-andersen?lang=eng"><img src="images/anderson.webp" alt="Elder Andersen"></a>
+            <a href="https://www.churchofjesuschrist.org/learn/ronald-a-rasband?lang=eng"><img src="images/rasband.webp" alt="Elder Rasband"></a>
+            <a href="https://www.churchofjesuschrist.org/learn/gary-e-stevenson?lang=eng"><img src="images/stevenson.webp" alt="Elder Stevenson"></a>
+            <a href="https://www.churchofjesuschrist.org/learn/dale-g-renlund?lang=eng"><img src="images/renlund.webp" alt="Elder Renlund"></a>
+            <a href="https://www.churchofjesuschrist.org/learn/gerrit-w-gong?lang=eng"><img src="images/gong.webp" alt="Elder Gong"></a>
+            <a href="https://www.churchofjesuschrist.org/learn/ulisses-soares?lang=eng"><img src="images/soares.webp" alt="Elder Soares"></a>
+            <a href="https://www.churchofjesuschrist.org/learn/patrick-kearon?lang=eng"><img src="images/kearon.webp" alt="Elder Kearon"></a>
+            <a href="https://www.churchofjesuschrist.org/learn/gerald-j-causse?lang=eng"><img src="images/causse.webp" alt="Elder Causse"></a>
+            <a href="https://www.churchofjesuschrist.org/learn/clark-g-gilbert?lang=eng"><img src="images/gilbert.webp" alt="Elder Gilbert"></a>
+            
+        </div>
+     </div>
+</body>
+</html>
